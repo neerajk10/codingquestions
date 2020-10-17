@@ -59,7 +59,7 @@ void main(){
 			printf(" %c\n", firstword[i]);
 			printf("first word till now looks like : %s\n", firstword);
 		}
-		if(i < stringlen(secondword) && is_vowel(secondword[i])){
+		if(i < stringlen(secondword) && !is_vowel(secondword[i])){
 			printf("[DEBUG] consonant encountered in secondword\n");
 			printf("[DEBUG] replacing %c with ", secondword[i]);
 			secondword[i] = '#';
